@@ -6,7 +6,7 @@
 long even_fibonacci(long maxN) {
     long fib[2] = {1,2};
     long sum = 2; // initial 2 from initialisation
-    while (fib[1]+fib[0] < maxN)
+    while (fib[1] < maxN)
     {
         long tmp = fib[0]+fib[1];
         if (tmp%2 == 0)
