@@ -9,13 +9,16 @@ int main(int argc, char** argv) {
     for(int start = 1; start <  N; ++start) {
         long long unsigned n = start;
         unsigned long long tmp = 0;
-        while(n > 1) {
+        for( ;n > 1;++tmp) {
             if(n%2==0) {
                 n = n/2;
             } else {
                 n = 3*n + 1;
             }
-            tmp++;
+            /*long long unsigned n1 = n/2;
+            long long unsigned n2 = 3*n + 1;
+            n = n%2==0?n1:n2;*/
+
         }
         #pragma omp critical
         {
